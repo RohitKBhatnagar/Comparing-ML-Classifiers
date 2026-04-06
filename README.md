@@ -200,7 +200,7 @@ All plots are stored in the `plots/` directory.
 | Decision Tree        | 0.9032         | 0.9022         | 31.99             |
 
 **SVM couldn't be calculated as its computationally very expensive and we couldn't execute evern after letting it run for many hours...**
-```
+
 
 ## 🏁 Business Impact
 
