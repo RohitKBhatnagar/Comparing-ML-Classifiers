@@ -190,3 +190,26 @@ All plots are stored in the `plots/` directory.
    - Threshold optimization  
 
 ---
+
+## 📊 **Final Hyperparameter-Tuned Model Comparison**
+
+| Model                | Train Accuracy | Test Accuracy  | Train Time (sec)  |
+|----------------------|----------------|----------------|-------------------|
+| Logistic Regression  | 0.9001         | 0.9015         | 17.55             |
+| KNN                  | 0.9053         | 0.8986         | 103.55            |
+| Decision Tree        | 0.9032         | 0.9022         | 31.99             |
+
+**SVM couldn't be calculated as its computationally very expensive and we couldn't execute evern after letting it run for many hours...**
+```
+
+## 🏁 Business Impact
+
+The goal of this practical assignment is to support the bank’s marketing team in identifying customers who are most likely to subscribe to a term deposit. Accurate predictions enable the bank to focus outreach efforts on high‑value prospects, reduce marketing costs, and improve campaign efficiency.
+
+The tuned Logistic Regression and other models demonstrated strong predictive performance, with AUC values around 0.80, indicating that the models can effectively rank customers by their likelihood of subscribing. This ranking ability is particularly valuable in targeted marketing, where the bank can prioritize the top decile (10%) or quartile (25%) of customers for outreach.
+
+However, the relatively low F1 scores across all models highlight the challenge of identifying the minority class. This means that while the models are good at ranking customers, they may still miss some potential subscribers. To mitigate this, the bank can adjust decision thresholds, apply class‑balancing techniques, or incorporate cost‑sensitive learning to increase recall for the positive class.
+
+From a business perspective, the recommended approach is to deploy the tuned Logistic Regression model due to its strong balance of accuracy, interpretability, and computational efficiency. The model can be integrated into the bank’s CRM system to score customers daily or weekly, enabling data‑driven marketing strategies that improve conversion rates and reduce unnecessary outreach.
+
+Overall, the project demonstrates that machine learning can meaningfully enhance marketing effectiveness by identifying high‑probability customers, optimizing resource allocation, and supporting more personalized engagement strategies.
